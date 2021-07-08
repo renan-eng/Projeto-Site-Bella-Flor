@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meu menu de navegação</title>
+
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			font-family: Montserrat;
+			background-color: #BE5D93;
+		}
+		.conteiner{
+			margin: 10px auto 10px auto;
+			align-content: center;
+			width: max-content;
+		}
+		ul{
+			width: max-content;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;			
+		}
+		li{	
+			margin-left: 0px;
+			padding: 0px;
+			float: left;
+			text-align: center;
+			padding-bottom: 9px;			
+		}
+		a{
+			display: block;
+			width: max-content;
+			text-decoration: none;
+			color:#F7F5F6;
+			text-align: center;	
+			/*transition: after .23s ease-in;	*/
+			padding: 0px 8px;
+
+		}
+
+		a:hover:after{
+		  content: " ";
+		  display: inline-block;
+		  width: 100%;
+		  height: .2em;
+		  background-color: #F7F5F6;
+		  border-radius: 10px;
+		  position: relative;
+		  vertical-align: text-top;	  
+		  -webkit-animation: fadein .68s;
+		}
+		@keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+		}
+	</style>
+
+</head>
+<body>
+	<h1 style="color: #F7F5F6">Criando meu menu</h1>
+	<div class="conteiner">
+		<ul>
+			<li><a href="Menu-bar.html">Início</a></li>
+			<li><a href="#">Sobre Nós</a></li>
+			<li><a href="#">Produtos</a></li>
+			<li><a href="#">Portifólio</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</div>
+</body>
+</html>
