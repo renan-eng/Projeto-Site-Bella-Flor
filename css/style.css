@@ -42,7 +42,7 @@ body {
   z-index: 1000;
 }
 .logo {
-  margin-left: 500px;
+  margin-left: 30%;
   width: 79px;
   float: left;
 }
@@ -157,13 +157,9 @@ h3 {
   font-size: 5em;
   font-weight: normal;
 }
-p {
-  margin: 30px 0px;
-}
 p.slogan {
   max-width: 380px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
 }
 .icon {
   position: absolute;
