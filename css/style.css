@@ -22,16 +22,16 @@ body {
   color: #f7f5f6;
 }
 .header {
-  display: block;
-  width: 100%;
-  background-image: url(/images/header_background.svg);
+  margin: 10px auto;
+  max-width: 100%;
+  height: 35vw;
+  background-image: url(/images/bgdHeader.png);
   background-repeat: no-repeat;
   background-position-x: center;
   background-attachment: scroll;
-  background-size: cover;
-  min-height: 44vw;
-  background-origin: border-box;
-  padding-top: 1vw;
+  background-size: 100% 100%;
+
+  /* padding-top: 1vw; */
 }
 
 /* -------------NAVBAR INICIO--------------- */
@@ -89,15 +89,18 @@ li {
 /* -------------NAVBAR FIM--------------- */
 
 /* -------------LOGO GRANDE--------------- */
-
+.wrapper {
+  /* margin-top: 2vh;   */
+}
 .logoGrande {
   align-self: center;
   justify-self: center;
   align-content: center;
 }
 h1 {
+  padding: 0.5vw;
   font-family: "someday";
-  font-size: 8.6vw;
+  font-size: 7.6vw;
   font-weight: normal;
 }
 h3 {
@@ -106,7 +109,7 @@ h3 {
   font-weight: normal;
 }
 p.slogan {
-  max-width: 380px;
+  max-width: 480px;
   margin: 30px auto;
   font-size: 1vw;
 }
@@ -126,7 +129,6 @@ button {
   padding: 0.7vw 0.5vw;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   font-size: 1vw;
   font-weight: bold;
   margin-left: 1%;
@@ -139,7 +141,7 @@ button {
 
 .grid-container {
   padding: 1vw;
-  margin: auto 5.2vw;
+  margin: 0 5.2vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -196,7 +198,7 @@ button {
 .depoimentos-wrapper {
   max-width: 100%;
 }
-.depoimento {
+h4 {
   font-size: 2vw;
   color: #be5d93;
 }
@@ -212,16 +214,17 @@ button {
 
 /* -------------DEPOIMNETOS FIM--------------- */
 
-/* -------------fOOTER INICIO--------------- */
+/* -------------FOOTER INICIO--------------- */
 
 .footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
   padding-top: 30px;
   background-image: url(/images/SVG/Grupo\ 303@2x.png);
   max-width: 100%;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-attachment: scroll;
-  background-origin: border-box;
 }
 
 .footerGrid {
@@ -257,3 +260,31 @@ button {
   width: 5vw;
   height: 5vw;
 }
+
+/* -------------FOOTER FIM--------------- */
+
+/* -------------QUEM SOMOS INICIO--------------- */
+
+.quemSomos p {
+  display: grid;
+  font-size: 1.6vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.equipe {
+  margin: 1vh auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  width: 60%;
+}
+
+.descricao {
+  justify-self: center;
+  align-self: center;
+  justify-items: center;
+  align-content: center;
+}
+
+/* -------------QUEM SOMOS FIM--------------- */
