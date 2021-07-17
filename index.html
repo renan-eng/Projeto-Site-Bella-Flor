@@ -3,237 +3,335 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="import" href="component.html" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="/path/to/cdn/bootstrap.min.js"></script>
+    <link href="bootstrap5-dropdown-ml-hack-hover.css" rel="stylesheet" />
+    <script src="bootstrap5-dropdown-ml-hack.js"></script>
+    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Bella Flor Personalizados</title>
   </head>
-  <body>
-    <div class="header">
-      <div class="container-nav">
-        <a href="#"
-          ><img
-            src="/images/Retângulo 27.png"
-            alt="logo da empresa Bella Flor"
-            class="logo"
-        /></a>
-        <nav class="nav-bar" role="horizontal">
-          <ul>
-            <li><a class="menu-nav-bar" href="index.html">Início</a></li>
-            <li><a class="menu-nav-bar" href="sobre-nos.html">Sobre Nós</a></li>
-            <li>
-              <a class="menu-nav-bar" href="#"
-                >Produtos <i class="fa fa-angle-down"></i>
-              </a>
-              <ul class="drop-down">
-                <li>Forminhas</li>
-                <li>Papelaria Personalizada</li>
-                <li>Encadernação Personalizada</li>
-              </ul>
-            </li>
-            <li><a class="menu-nav-bar" href="#">Portifólio</a></li>
-            <li><a class="menu-nav-bar" href="#">Contato</a></li>
-            <div class="dot"></div>
-          </ul>
-        </nav>
-      </div>
+  <div id="bodyDiv">
+    <body>
+      <!------------- Inicio Menu de Navegação ------------ -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #be6094"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/images/Retângulo 27.png"
+              alt="Bella Flor Logo"
+              width="83"
+              height="48.4"
+              class="d-inline-block align-top"
+            />
+            <span class="hidden">Navbar</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-nos.html">Sobre Nós</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Forminhas
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-item">Paleta de Cores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-item">Forminhas de Papel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-item"
+                      >Forminhas de Telaescócia</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-item">Forminhas de Tecido</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Papelaria Personalizada
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-item">Convites</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-item">Lembrancinhas</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Encadernação Personalizada</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a
+                href="http://api.whatsapp.com/send?phone=5531996175365"
+                target="_blank"
+                ><button class="btn btn-success" type="button">
+                  WhatsApp Forminhas
+                </button></a
+              >
+              <sppan style="color: #be6094">AA</sppan>
+              <a
+                href="http://api.whatsapp.com/send?phone=5531985057299"
+                target="_blank"
+                ><button class="btn btn-success" type="button">
+                  WhatsApp Papelaria
+                </button></a
+              >
+            </form>
+          </div>
+        </div>
+      </nav>
       <!-- Fim Menu de Navegação -->
-      <main>
-        <div class="wrapper">
-          <div class="logoGrange">
-            <h1>
-              Bella
-              <img src="/images/Ativo 1.svg" alt="flor" class="icon" /> Flor
-            </h1>
-            <h3>Papelaria Personalizada</h3>
-          </div>
-          <p class="slogan">
-            A Bella Flor trabalha com memórias que se eternizam nos pequenos
-            detalhes. Papelaria Personalizada, Artesanal, Encadernação e
-            Forminhas para doces
-          </p>
-          </div>
-        </div>
-      </main>
-    </div>
-    <div class="grid-container">
-      <div class="forminhasDePapel">
-        <h4 class="titulo">Forminhas de Papel</h4>
-        <div class="fotos">
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-1.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-2.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-3-1.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-4.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-5.png"
-            alt=""
-            class="img1"
-          />
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-        </div>
-      </div>
-      <div class="forminhasDePapel">
-        <h4 class="titulo">Forminhas de Papel</h4>
-        <div class="fotos">
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-1.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-2.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-3-1.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-4.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-5.png"
-            alt=""
-            class="img1"
-          />
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-        </div>
-      </div>
-      <div class="forminhasDePapel">
-        <h4 class="titulo">Forminhas de Papel</h4>
-        <div class="fotos">
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-1.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-2.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-3-1.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-4.png"
-            alt=""
-            class="img1"
-          />
-          <img
-            src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-5.png"
-            alt=""
-            class="img1"
-          />
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-          <div class="preco">
-            <p>R$0,45</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="depoimentos-wrapper">
-      <div class="depoimento">
-        <h4>Depoimentos</h4>
-      </div>
-      <div class="subDep">O que falam sobre agente:</div>
-      <div><img src="/images/depoimentos.png" alt="" class="imgDep" /></div>
-    </div>
 
-    <footer class="footer">
-      <div class="footerGrid">
-        <div class="sobreNos">
-          <h5>Sobre Nós</h5>
-          <p>
-            A Bella Flor surgiu do desejo de mãe e filha tornar único e
-            inesquecíveis os momentos de alegria e para isso a beleza suave,
-            porém marcante, é essencial. Nossos produtos são flores que traduzem
-            nossa vontade tornar seu evento lindo e harmonioso.
-          </p>
+      <div class="wrapper">
+        <div class="logoGrange">
+          <h1 id="bellaFlor">
+            Bella
+            <img src="/images/Ativo 1.svg" alt="flor" class="icon" /> Flor
+          </h1>
+          <h3>Papelaria Personalizada</h3>
         </div>
-        <div class="redesSociais">
-          <p>Redes Sociais</p>
-          <div class="imgSociais">
-            <a href="https://www.facebook.com/bellaflorpapelaria/">
-              <img class="face" src="/images//SVG/Caminho 197.png" alt="" />
-            </a>
-            <a href="https://www.instagram.com/bellaflorpapelaria_/"
-              ><img class="insta" src="/images/SVG/Grupo 280.png" alt=""
-            /></a>
+        <p class="slogan">
+          A Bella Flor trabalha com memórias que se eternizam nos pequenos
+          detalhes. Papelaria Personalizada, Artesanal, Encadernação e Forminhas
+          para doces
+        </p>
+      </div>
+
+      <div class="grid-container">
+        <div class="forminhasDePapel">
+          <h4 class="titulo">Forminhas de Papel</h4>
+          <div class="fotos">
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-1.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-2.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-3-1.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-4.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-5.png"
+              alt=""
+              class="img1"
+            />
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
           </div>
         </div>
-        <div class="footLogo">
-          <img
-            clas="imgDoLogoFoot"
-            src="/images/SVG/Grupo de rolagem 3@2x.png"
-            alt=""
-          />
+        <div class="forminhasDePapel">
+          <h4 class="titulo">Forminhas de Papel</h4>
+          <div class="fotos">
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-1.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-2.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-3-1.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-4.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-5.png"
+              alt=""
+              class="img1"
+            />
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+          </div>
+        </div>
+        <div class="forminhasDePapel">
+          <h4 class="titulo">Forminhas de Papel</h4>
+          <div class="fotos">
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-1.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-2.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-3-1.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-4.png"
+              alt=""
+              class="img1"
+            />
+            <img
+              src="/images/produtos/forminhas/forminhasDePapel/MODELOS-FORMINHAS-5.png"
+              alt=""
+              class="img1"
+            />
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+            <div class="preco">
+              <p>R$0,45</p>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
-  <link
-    href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    rel="stylesheet"
-  />
+      <div class="depoimentos-wrapper">
+        <div class="depoimento">
+          <h4>Depoimentos</h4>
+        </div>
+        <div class="subDep">O que falam sobre agente:</div>
+        <div><img src="/images/depoimentos.png" alt="" class="imgDep" /></div>
+      </div>
+
+      <footer class="footer">
+        <div class="footerGrid">
+          <div class="sobreNos">
+            <h5>Sobre Nós</h5>
+            <p>
+              A Bella Flor surgiu do desejo de mãe e filha tornar único e
+              inesquecíveis os momentos de alegria e para isso a beleza suave,
+              porém marcante, é essencial. Nossos produtos são flores que
+              traduzem nossa vontade tornar seu evento lindo e harmonioso.
+            </p>
+          </div>
+          <div class="redesSociais">
+            <p>Redes Sociais</p>
+            <div class="imgSociais">
+              <a href="https://www.facebook.com/bellaflorpapelaria/">
+                <img class="face" src="/images//SVG/Caminho 197.png" alt="" />
+              </a>
+              <a href="https://www.instagram.com/bellaflorpapelaria_/"
+                ><img class="insta" src="/images/SVG/Grupo 280.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="footLogo">
+            <img
+              clas="imgDoLogoFoot"
+              src="/images/SVG/Grupo de rolagem 3@2x.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </div>
 </html>
