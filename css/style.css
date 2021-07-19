@@ -28,20 +28,13 @@ body {
   display: none;
 }
 /* ------------- Navbar ----------------- */
-.navbar .navbar-expand-lg .navbar-dark {
-  border: none !important;
-}
+
 /* -------------LOGO GRANDE--------------- */
 .wrapper {
-  position: static;
-  top: 0;
-  max-width: 100%;
-  min-height: 400px;
-  background-image: url(/images/bgdHeader.png);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-attachment: scroll;
-  background-size: 100% 100%;
+  background-color: #be5d93;
+  border-bottom: solid 3px #f7f5f6;
+  box-shadow: 2px 5px 8px #5a4e6b;
+  margin-bottom: 20px;
 }
 
 .logoGrande {
@@ -94,57 +87,40 @@ p.slogan {
 /* -------------LOGO GRANDE FIM--------------- */
 
 /* -------------PRODUTOS GRID INICIO--------------- */
-
-.grid-container {
-  padding: 1vw;
-  margin: 0 5.2vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.titulo {
-  padding-bottom: 1vw;
-  font-size: 1vw;
-}
-
-.forminhasDePapel {
-  background-color: #be5d93;
-  padding: 0.3vw 1vw 1vw 1vw;
-  box-shadow: 4px 2px 10px rgb(49, 49, 49);
-}
-
-.forminhasDeTecido {
-  background-color: #be5d93;
-}
-
-.encadernacao {
-  background-color: #be5d93;
-}
-
 .fotos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  column-gap: 1vw;
+  max-width: 300px;
+  height: auto;
 }
 
-.img1 {
-  width: 100%;
+.colunas {
+  background-color: blue;
+}
+
+.linha {
+  background-color: #BE5D93;
+  padding: 12px;
+}
+
+.refImg {
+  overflow: hidden;
+  position: relative;
 }
 
 .preco {
-  background-color: #ffcfe9;
-  width: 100%;
-  color: black;
-  padding: 2% 2% 2% 2%;
-  font-size: 1vw;
+  font-weight: bold;
 }
 
-.img1 .preco {
-  align-self: center;
-  justify-self: center;
+.tituloVit{
+  font-size: 1.5em;
+  color: #f7f5f6;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .fotos {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* -------------PRODUTOS GRID FIM--------------- */
