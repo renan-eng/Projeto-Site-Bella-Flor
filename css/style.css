@@ -31,10 +31,11 @@ body {
 
 /* -------------LOGO GRANDE--------------- */
 .wrapper {
+  margin-top: 55px;
   background-color: #be5d93;
   border-bottom: solid 3px #f7f5f6;
   box-shadow: 2px 5px 8px #5a4e6b;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .logoGrande {
@@ -49,7 +50,7 @@ body {
   font-weight: normal;
   color: #f7f5f6;
 }
-h3 {
+h3.papelPerso {
   font-family: "Organic_Elements";
   font-size: 4vw;
   font-weight: normal;
@@ -66,21 +67,33 @@ p.slogan {
   width: 3.5%;
 }
 
-/* responsividade da logo e botões */
+/* responsividade da logo */
 @media screen and (max-width: 1400px) {
   p.slogan {
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 800px) {
-  h1,
-  h3 {
-    padding: 0;
+  .wrapper {
+    margin-top: 68px;
   }
+  #bellaFlor {
+    font-size: 4.2em;
+  }
+  h3.papelPerso {
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+
   p.slogan {
     max-width: 400px;
     margin: 0px auto;
-    font-size: 2vw;
+    font-size: 1em;
+  }
+
+  .icon {
+    position: relative;
+    width: 8.5%;
   }
 }
 
@@ -97,8 +110,9 @@ p.slogan {
 }
 
 .linha {
-  background-color: #BE5D93;
+  background-color: #be5d93;
   padding: 12px;
+  margin-bottom: 30px;
 }
 
 .refImg {
@@ -108,12 +122,15 @@ p.slogan {
 
 .preco {
   font-weight: bold;
+  color: #be5d93;
+  margin-bottom: 10px;
+  background-color: #ffcfe9;
 }
 
-.tituloVit{
+.tituloVit {
   font-size: 1.5em;
   color: #f7f5f6;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 800px) {
