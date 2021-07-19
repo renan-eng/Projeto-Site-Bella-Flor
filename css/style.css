@@ -30,8 +30,7 @@ body {
 /* ------------- Navbar ----------------- */
 
 /* -------------LOGO GRANDE--------------- */
-.wrapper {
-  margin-top: 55px;
+.wrapper {  
   background-color: #be5d93;
   border-bottom: solid 3px #f7f5f6;
   box-shadow: 2px 5px 8px #5a4e6b;
@@ -73,10 +72,7 @@ p.slogan {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 800px) {
-  .wrapper {
-    margin-top: 68px;
-  }
+@media screen and (max-width: 800px) {  
   #bellaFlor {
     font-size: 4.2em;
   }
